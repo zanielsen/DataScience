@@ -9,7 +9,7 @@ model = YOLO('yolov8n.pt') # load a pre-trained model
 results = model.train(data='data.yaml', epochs=200, imgsz=640)
 '''
 
-model = YOLO('yolov8n.pt')  # load model trained on acne training data (yolov8n model)
+model = YOLO('yolov8n-acne.pt')  # load model trained on acne training data (yolov8n model)
 
 model.val(data="./data.yaml", conf=0.5)
 
